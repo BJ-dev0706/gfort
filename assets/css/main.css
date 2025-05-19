@@ -1389,7 +1389,13 @@ section,
 }
 
 .portfolio .portfolio-content img {
-  transition: 0.3s;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.portfolio .portfolio-content img.fixed-height {
+  height: 300px;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-content .portfolio-info {
