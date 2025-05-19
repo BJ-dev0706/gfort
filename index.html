@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Index - Gfort</title>
+    <title>Gfort - Innovative Tech Agency | 3D Web, Blockchain, AI & Mobile Development</title>
     <meta
-      content="Gfort - A multidisciplinary tech agency specializing in 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps."
+      content="Gfort is a leading tech agency specializing in 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps. Transform your business with our innovative digital solutions."
       name="description"
     />
     <meta
-      content="tech agency, 3D web, blockchain, full stack development, AI, mobile apps, Gfort"
+      content="tech agency, 3D web, blockchain, full stack development, AI, mobile apps, web development, digital transformation, Gfort, VR, AR"
       name="keywords"
     />
     <meta content="Gfort Technologies" name="author" />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gfort.org/" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gfort.org/" />
-    <meta property="og:title" content="Gfort - Innovative Tech Solutions" />
+    <meta property="og:title" content="Gfort - Innovative Tech Solutions for Digital Transformation" />
     <meta
       property="og:description"
       content="A multidisciplinary tech agency pushing the boundaries of innovation through 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps."
@@ -48,6 +51,34 @@
       rel="stylesheet"
     />
 
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Gfort Technologies",
+        "url": "https://gfort.org",
+        "logo": "https://gfort.org/assets/img/logo/logo-dark.png",
+        "description": "A multidisciplinary tech agency specializing in 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Spain"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "(+34) 603814470",
+          "email": "info@gfort.org",
+          "contactType": "customer service"
+        },
+        "sameAs": [
+          "https://twitter.com/gfort",
+          "https://www.facebook.com/gfort",
+          "https://www.instagram.com/gfort",
+          "https://www.linkedin.com/company/gfort"
+        ]
+      }
+    </script>
+
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -66,6 +97,15 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
   </head>
 
   <body class="index-page">
@@ -108,7 +148,7 @@
           class="container position-relative d-flex align-items-center justify-content-between"
         >
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo/logo-dark.png" alt="" srcset="" />
+            <img src="assets/img/logo/logo-dark.png" alt="Gfort Technologies Logo" srcset="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
@@ -139,7 +179,7 @@
           data-bs-interval="5000"
         >
           <div class="carousel-item active">
-            <img src="assets/img/hero-carousel/hero-carousel-0.jpg" alt="" />
+            <img src="assets/img/hero-carousel/hero-carousel-0.jpg" alt="Gfort Technologies - Building the Future Today" />
             <div class="carousel-container">
               <h2>Welcome to <span>Gfort</span></h2>
               <p style="text-align: center">
@@ -155,7 +195,7 @@
           </div>
 
           <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" />
+            <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="Immersive 3D & VR Experiences by Gfort" />
             <div class="carousel-container">
               <h2>Immersive Experiences in <span>3D & VR</span></h2>
               <p style="text-align: center">
@@ -169,7 +209,7 @@
           </div>
 
           <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="" />
+            <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="Blockchain Development Services by Gfort" />
             <div class="carousel-container">
               <h2>Secure and Scalable <span>Blockchain</span> Systems</h2>
               <p style="text-align: center">
@@ -185,7 +225,7 @@
           </div>
 
           <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="" />
+            <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="Full Stack & Mobile Development by Gfort" />
             <div class="carousel-container">
               <h2>Robust <span>Full Stack & Mobile</span> Development</h2>
               <p style="text-align: center">
@@ -199,7 +239,7 @@
           </div>
 
           <div class="carousel-item">
-            <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="" />
+            <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="AI Solutions by Gfort Technologies" />
             <div class="carousel-container">
               <h2>Smarter Solutions with <span>AI</span></h2>
               <p style="text-align: center">
@@ -932,5 +972,8 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- SEO Optimizer -->
+    <script src="assets/js/seo-optimizer.js"></script>
   </body>
 </html>
