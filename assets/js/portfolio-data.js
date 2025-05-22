@@ -5,7 +5,9 @@ const portfolioItems = [
     description: "Innovative solution leveraging artificial intelligence to automate customer interactions while maintaining personalized service quality.",
     category: "blockchain",
     image: "assets/img/portfolio/Blockchain/rafffle.famousfoxes.com/1.png",
-    detailsLink: "portfolio-details.html"
+    detailsLink: "portfolio-details.html",
+    client: "TechCorp Solutions",
+    date: "15 March, 2024"
   },
   {
     id: 2,
@@ -13,7 +15,9 @@ const portfolioItems = [
     description: "Streamlined voter registration platform featuring intuitive interface design and robust security protocols for protecting sensitive user information.",
     category: "blockchain",
     image: "assets/img/portfolio/Blockchain/ridotto.io/1.png",
-    detailsLink: "portfolio-details.html"
+    detailsLink: "portfolio-details.html",
+    client: "ElectroVote Systems",
+    date: "28 April, 2024"
   },
   {
     id: 3,

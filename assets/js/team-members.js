@@ -10,7 +10,7 @@ const teamMembers = [
     name: "Nazir Kazimi",
     position: "Chief Executive Officer",
     image: "assets/img/team/nazir.jpg",
-    bio: "Leading our vision with strategic direction and fostering innovation across all business domains.",
+    bio: "Driving strategic vision and business growth while cultivating a culture of innovation and excellence across all departments.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -23,7 +23,7 @@ const teamMembers = [
     name: "Lam Jingan",
     position: "Chief Technology Officer",
     image: "assets/img/team/lam.png",
-    bio: "Guiding our technological strategy and overseeing the development of cutting-edge solutions.",
+    bio: "Architecting our technology roadmap and leading R&D initiatives to ensure we remain at the cutting edge of industry innovation.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -36,7 +36,7 @@ const teamMembers = [
     name: "Ruben Granados",
     position: "Software Developer",
     image: "assets/img/team/ruben.png",
-    bio: "Building robust applications and implementing efficient solutions to complex technical challenges.",
+    bio: "Crafting clean, efficient code and developing scalable applications that form the backbone of our product ecosystem.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -49,7 +49,7 @@ const teamMembers = [
     name: "Jhon Alejandro",
     position: "Blockchain Developer",
     image: "assets/img/team/jhon.jpg",
-    bio: "Specializing in smart contract development and creating secure blockchain infrastructure solutions.",
+    bio: "Designing and implementing decentralized solutions with expertise in smart contracts, consensus mechanisms, and blockchain protocols.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -62,7 +62,7 @@ const teamMembers = [
     name: "Nikita Dulenko",
     position: "Blockchain Developer",
     image: "assets/img/team/nikita.png",
-    bio: "Implementing secure blockchain solutions and developing decentralized applications with leading protocols.",
+    bio: "Engineering robust blockchain infrastructure and developing cryptographic solutions that ensure security and transparency.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -75,7 +75,7 @@ const teamMembers = [
     name: "David Ricardo",
     position: "AI Engineer",
     image: "assets/img/team/david.png",
-    bio: "Developing advanced AI models and implementing machine learning solutions to enhance our products.",
+    bio: "Creating intelligent systems and algorithms that power our predictive analytics and automation capabilities.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -88,7 +88,7 @@ const teamMembers = [
     name: "Jhon Alejandro",
     position: "Blockchain Developer",
     image: "assets/img/team/jhon.jpg",
-    bio: "Specializing in smart contract development and creating secure blockchain infrastructure solutions.",
+    bio: "Developing distributed ledger applications and implementing cryptographic protocols to enhance data integrity and security.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -102,7 +102,7 @@ const teamMembers = [
     name: "Arian Koshelenko",
     position: "3D web developer & VR developer",
     image: "assets/img/team/arian.jpg",
-    bio: "Creating immersive 3D experiences and developing virtual reality applications for next-gen engagement.",
+    bio: "Building immersive digital experiences through WebGL, Three.js, and VR technologies that push the boundaries of spatial computing.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -120,7 +120,7 @@ const departmentTeamMembers = {
       name: "Thomas Wilson",
       position: "Senior Developer",
       image: "assets/img/team/team-05.png",
-      bio: "Leading complex development projects with expertise in architecture design and performance optimization.",
+      bio: "Mentoring development teams and delivering high-performance solutions with expertise in system architecture and code optimization.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -133,7 +133,7 @@ const departmentTeamMembers = {
       name: "Laura Chen",
       position: "DevOps Engineer",
       image: "assets/img/team/team-06.png",
-      bio: "Implementing CI/CD pipelines and managing cloud infrastructure to ensure reliable and scalable operations.",
+      bio: "Streamlining development workflows and orchestrating cloud infrastructure to ensure reliable, secure, and scalable application deployment.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -148,7 +148,7 @@ const departmentTeamMembers = {
       name: "Alex Rodriguez",
       position: "Graphic Designer",
       image: "assets/img/team/team-07.png",
-      bio: "Crafting compelling visual assets and brand materials that communicate our identity and values.",
+      bio: "Creating visually striking designs and brand assets that communicate our message through thoughtful typography, color theory, and composition.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -161,7 +161,7 @@ const departmentTeamMembers = {
       name: "Priya Sharma",
       position: "UI/UX Researcher",
       image: "assets/img/team/team-08.png",
-      bio: "Analyzing user behavior and feedback to design intuitive interfaces that enhance user satisfaction.",
+      bio: "Conducting user studies and analyzing interaction patterns to inform design decisions that create intuitive, accessible digital experiences.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -311,7 +311,6 @@ function getDepartmentTeamMembers(department) {
   return departmentTeamMembers[department] || teamMembers;
 }
 
-// Export the functions for use in other files
 window.TeamMembersModule = {
   teamMembers,
   departmentTeamMembers,

@@ -1,8 +1,3 @@
-/**
- * SEO Optimizer and Performance Enhancement Script
- * This script handles lazy loading of images and other SEO-related optimizations
- */
-
 document.addEventListener('DOMContentLoaded', function() {
   "use strict";
 

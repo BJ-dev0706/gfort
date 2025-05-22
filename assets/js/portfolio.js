@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="portfolio-hover">
             <div class="portfolio-links">
               <a href="${item.image}" title="${item.title}" data-gallery="portfolio-gallery-${item.category}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-              <a href="${item.detailsLink}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <a href="${item.detailsLink}?id=${item.id}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
           </div>
         </div>
         <div class="portfolio-info">
-          <span class="portfolio-category">${categories.find(cat => cat.filter === item.category)?.name || 'Uncategorized'}</span>
+          <span class="portfolio-category">${categories.find(cat => cat.id === item.category)?.name || 'Uncategorized'}</span>
           <h4>${item.title}</h4>
           <p class="portfolio-description">${item.description}</p>
         </div>
