@@ -366,79 +366,8 @@
   </section>
 
   <section id="testimonials" class="testimonials section-bg">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>Client Testimonials</h2>
-        <p>Here's what our clients say about our web development services:</p>
-      </div>
-  
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-  
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                Gfort exceeded our expectations with their web development expertise. They delivered a responsive and user-friendly website that has significantly boosted our online presence.
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              <img src="" class="testimonial-img" alt="">
-              <h3>James Anderson</h3>
-              <h4>CEO, InnovateTech</h4>
-            </div>
-          </div>
-  
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                Working with Gfort was a pleasure. They were responsive to our needs, communicated effectively throughout the project, and delivered a high-quality website that has been crucial for our business growth.
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
-              <h3>Emily Davis</h3>
-              <h4>CMO, MarketMasters</h4>
-            </div>
-          </div>
-  
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                Gfort's professionalism and attention to detail are unmatched. They not only met but exceeded our requirements, making them a trusted partner.
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonial-3.jpg" class="testimonial-img" alt="">
-              <h3>Michael Johnson</h3>
-              <h4>CTO, TechSolutions</h4>
-            </div>
-          </div>
-  
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bi bi-quote quote-icon-left"></i>
-                Choosing Gfort was the best decision we made. Their creativity and strategic insights helped us achieve remarkable growth in our online presence.
-                <i class="bi bi-quote quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonial-4.jpg" class="testimonial-img" alt="">
-              <h3>Sophia Martinez</h3>
-              <h4>Product Manager, CreativeWorks</h4>
-            </div>
-          </div>
-  
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-  
-    </div>
+    <!-- Testimonials will be dynamically inserted here by the Testimonials module -->
   </section>
-
-
-
-
-
-
 
   <footer id="footer" class="footer position-relative">
 
@@ -528,25 +457,24 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Testimonials Module -->
+  <script src="assets/js/testimonials.js"></script>
+
   <script>
     AOS.init({
       once: true // Ensures animations only run once
     });
 
-    var swiper = new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    slidesPerView: 1,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+      // Render service-specific testimonials in slider layout
+      TestimonialsModule.renderTestimonialsSlider(
+        'testimonials', 
+        TestimonialsModule.getServiceTestimonials('web-development'),
+        'Client Testimonials',
+        'Here\'s what our clients say about our web development services:',
+        true
+      );
+    });
   </script>
 
 </body>

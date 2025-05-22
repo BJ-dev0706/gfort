@@ -417,99 +417,7 @@
       </section>
 
       <section id="testimonials" class="testimonials section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Client Testimonials</h2>
-            <p>
-              Here's what our clients say about our Customer Support Systems:
-            </p>
-          </div>
-
-          <div
-            class="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Gfort's customer support system is exceptional. They
-                    responded promptly to our queries and resolved our issues
-                    efficiently. Highly recommended!
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonial-1.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Smith</h3>
-                  <h4>CEO, ABC Company</h4>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    We have been using Gfort's customer support for over a year
-                    now, and they consistently exceed our expectations. Their
-                    team is knowledgeable and courteous.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonial-2.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Jane Doe</h3>
-                  <h4>Marketing Manager, XYZ Inc.</h4>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Impressed with Gfort's commitment to customer satisfaction.
-                    Their support team goes above and beyond to ensure our
-                    issues are resolved quickly.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonial-3.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>David Johnson</h3>
-                  <h4>CTO, Tech Solutions Ltd.</h4>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Gfort's customer support is top-notch. They provided us with
-                    tailored solutions that perfectly fit our business needs.
-                    Great job!
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonial-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Sarah Brown</h3>
-                  <h4>Operations Manager, Global Tech Co.</h4>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
+        
       </section>
 
       <section class="contact">
@@ -724,6 +632,19 @@
           type: "bullets",
           clickable: true,
         },
+      });
+    </script>
+    <!-- Testimonials Module -->
+    <script src="assets/js/testimonials.js"></script>
+    
+    <!-- SEO Optimizer -->
+    <script src="assets/js/seo-optimizer.js"></script>
+    
+    <script>
+      // Initialize testimonials once DOM is loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        // Render testimonials in grid layout
+        TestimonialsModule.renderTestimonialsGrid('testimonials');
       });
     </script>
   </body>
