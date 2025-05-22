@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Use portfolio data from variables (imported via script tag)
   
-  // Populate portfolio filters
   const filtersContainer = document.getElementById('portfolioFilters');
   categories.forEach((category, index) => {
     const listItem = document.createElement('li');
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     filtersContainer.appendChild(listItem);
   });
 
-  // Populate portfolio items
   const portfolioContainer = document.getElementById('portfolioContainer');
   portfolioItems.forEach(item => {
     const portfolioItem = document.createElement('div');
@@ -31,16 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="portfolio-info">
           <span class="portfolio-category">${categories.find(cat => cat.filter === item.category)?.name || 'Uncategorized'}</span>
           <h4>${item.title}</h4>
-          <p>${item.description}</p>
+          <p class="portfolio-description">${item.description}</p>
         </div>
       </div>
     `;
     portfolioContainer.appendChild(portfolioItem);
   });
 
-  // Initialize portfolio filters
   if (typeof Isotope !== 'undefined') {
-    // Use imagesLoaded to ensure Isotope arranges correctly after all images have loaded
     imagesLoaded(portfolioContainer, function() {
       const portfolioIsotope = new Isotope('.isotope-container', {
         itemSelector: '.isotope-item',
@@ -55,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
             filter: this.getAttribute('data-filter')
           });
           
-          // Check for newly visible images and load them if needed
           if (typeof lazyLoadImages === 'function') {
             setTimeout(lazyLoadImages, 300);
           }
@@ -64,14 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Initialize lightbox
   if (typeof GLightbox !== 'undefined') {
     const portfolioLightbox = GLightbox({
       selector: '.glightbox'
     });
   }
 
-  // Add search functionality
   document.getElementById('portfolioSearch').addEventListener('input', function(e) {
     const searchTerm = e.target.value.toLowerCase();
     portfolioItems.forEach(item => {
@@ -84,19 +76,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Update isotope layout after search
     if (typeof Isotope !== 'undefined') {
       const portfolioIsotope = new Isotope('.isotope-container');
       portfolioIsotope.arrange();
       
-      // Check for newly visible images after search
       if (typeof lazyLoadImages === 'function') {
         setTimeout(lazyLoadImages, 300);
       }
     }
   });
   
-  // Initialize lazy loading for portfolio images
   if (typeof initLazyLoading === 'function') {
     initLazyLoading();
   }

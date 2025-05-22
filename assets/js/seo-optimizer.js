@@ -6,22 +6,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   "use strict";
 
-  // Implement lazy loading for images that don't already have it
   const images = document.querySelectorAll('img:not([loading])');
   images.forEach(img => {
     img.setAttribute('loading', 'lazy');
   });
 
-  // Add automatic alt text to images that don't have it
   const imagesWithoutAlt = document.querySelectorAll('img:not([alt])');
   imagesWithoutAlt.forEach(img => {
-    // Extract a name from the image path
     const imgPath = img.src.split('/').pop();
     const imgName = imgPath.split('.')[0].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     img.setAttribute('alt', imgName);
   });
 
-  // Enhance anchor tags with title attributes for better SEO
   const linksWithoutTitle = document.querySelectorAll('a:not([title])');
   linksWithoutTitle.forEach(link => {
     if (link.textContent.trim() !== '') {
@@ -29,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Add proper rel attributes to external links
   const externalLinks = document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])');
   externalLinks.forEach(link => {
     if (!link.getAttribute('rel') || !link.getAttribute('rel').includes('noopener')) {
@@ -38,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Track outbound links for analytics
   externalLinks.forEach(link => {
     link.addEventListener('click', function(e) {
       if (typeof gtag === 'function') {
@@ -50,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Add structured data for local business if not present
   if (!document.querySelector('script[type="application/ld+json"]')) {
     const localBusinessSchema = {
       "@context": "https://schema.org",

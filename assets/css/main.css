@@ -2554,6 +2554,8 @@ section,
   transition: all 0.3s ease;
   background-color: #fff;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio .portfolio-card:hover {
@@ -2565,6 +2567,7 @@ section,
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
 }
 
 .portfolio .portfolio-img-container img {
@@ -2634,6 +2637,9 @@ section,
 .portfolio .portfolio-info {
   padding: 20px;
   text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio .portfolio-info .portfolio-category {
@@ -2651,6 +2657,7 @@ section,
   font-weight: 700;
   margin-bottom: 8px;
   transition: color 0.3s ease;
+  flex-shrink: 0;
 }
 
 .portfolio .portfolio-card:hover .portfolio-info h4 {
@@ -2667,4 +2674,20 @@ section,
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 4.5em;
+  max-height: 4.5em;
+}
+
+.portfolio .portfolio-info p.portfolio-description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 4.5em; /* Fixed height: 3 lines × 1.5 line-height */
+  max-height: 4.5em;
 }
