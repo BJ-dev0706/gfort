@@ -180,7 +180,48 @@
         }
       }, false);
     });
-
   });
+
+  /**
+   * Initialize lazy loading for images
+   */
+  function initLazyLoading() {
+    // Convert existing images to lazy loading format
+    prepareLazyLoadImages();
+    
+    // Use the lazy loading module
+    if (typeof window.IntersectionObserver !== 'undefined') {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            const src = img.getAttribute('data-src');
+            
+            if (src) {
+              img.src = src;
+              img.removeAttribute('data-src');
+              img.classList.remove('lazy-loading');
+              img.classList.add('lazy-loaded');
+            }
+            
+            observer.unobserve(img);
+          }
+        });
+      }, {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+      });
+      
+      document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+      });
+    }
+  }
+  
+  // Make lazy loading functions available globally
+  window.initLazyLoading = initLazyLoading;
+  
+  // Initialize lazy loading
+  window.addEventListener('DOMContentLoaded', initLazyLoading);
 
 })();

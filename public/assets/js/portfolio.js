@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     portfolioItem.setAttribute('data-id', item.id);
     portfolioItem.innerHTML = `
       <div class="portfolio-content h-100">
-        <img src="${item.image}" class="img-fluid fixed-height py-5 border" alt="${item.title}">
+        <img data-src="${item.image}" class="img-fluid fixed-height py-5 border lazy-loading" alt="${item.title}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E">
         <div class="portfolio-info">
           <h4>${item.title}</h4>
           <p>${item.description}</p>
@@ -47,6 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
           portfolioIsotope.arrange({
             filter: this.getAttribute('data-filter')
           });
+          
+          // Check for newly visible images and load them if needed
+          if (typeof lazyLoadImages === 'function') {
+            setTimeout(lazyLoadImages, 300);
+          }
         });
       });
     });
@@ -76,6 +81,16 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof Isotope !== 'undefined') {
       const portfolioIsotope = new Isotope('.isotope-container');
       portfolioIsotope.arrange();
+      
+      // Check for newly visible images after search
+      if (typeof lazyLoadImages === 'function') {
+        setTimeout(lazyLoadImages, 300);
+      }
     }
   });
+  
+  // Initialize lazy loading for portfolio images
+  if (typeof initLazyLoading === 'function') {
+    initLazyLoading();
+  }
 }); 
