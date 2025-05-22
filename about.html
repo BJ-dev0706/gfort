@@ -418,124 +418,7 @@
 
       <!-- Team Members Section -->
       <section id="team" class="team section">
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Team Members</h2>
-          <p>
-            Our team members share their experiences and success stories with
-            Gfort's innovative solutions.
-          </p>
-        </div>
-        <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="team-member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-03.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>James Anderson</h4>
-                  <span>Chief Technology Officer</span>
-                  <p>
-                    Innovating with cutting-edge technology to drive success and
-                    efficiency.
-                  </p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Team Member -->
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="team-member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-01.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Emily Davis</h4>
-                  <span>Chief Operating Officer</span>
-                  <p>
-                    Ensuring operational excellence and smooth execution of
-                    projects.
-                  </p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Team Member -->
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="team-member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-04.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Michael Johnson</h4>
-                  <span>Head of Marketing</span>
-                  <p>
-                    Crafting strategies that enhance brand visibility and
-                    customer engagement.
-                  </p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Team Member -->
-
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="team-member d-flex align-items-start">
-                <div class="pic">
-                  <img
-                    src="assets/img/team/team-02.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="member-info">
-                  <h4>Sophia Martinez</h4>
-                  <span>Lead UX Designer</span>
-                  <p>
-                    Designing intuitive and user-friendly interfaces that
-                    delight users.
-                  </p>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- End Team Member -->
-          </div>
-        </div>
+        <!-- Content will be dynamically loaded by TeamMembersModule -->
       </section>
       <!-- /Team Members Section -->
 
@@ -816,8 +699,11 @@
     <!-- SEO Optimizer -->
     <script src="assets/js/seo-optimizer.js"></script>
     
+    <!-- Team Members Module -->
+    <script src="assets/js/team-members.js"></script>
+    <script src="assets/js/init-team-module.js"></script>
+
     <script>
-      // Initialize testimonials once DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
         // Render testimonials in grid layout
         TestimonialsModule.renderTestimonialsGrid(
