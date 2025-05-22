@@ -3,7 +3,6 @@
  * A reusable module to manage and display testimonials across the website
  */
 
-// Testimonial data
 const testimonials = [
   {
     id: 1,
