@@ -69,6 +69,19 @@ const teamMembers = [
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
     }
+  },
+  {
+    id: 4,
+    name: "David Ricardo",
+    position: "AI Engineer",
+    image: "assets/img/team/david.png",
+    bio: "Designing intuitive and user-friendly interfaces that delight users.",
+    social: {
+      twitter: "https://twitter.com",
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      linkedin: "https://linkedin.com"
+    }
   }
 ];
 
