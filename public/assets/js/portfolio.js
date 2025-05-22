@@ -18,13 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
     portfolioItem.className = `col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.category}`;
     portfolioItem.setAttribute('data-id', item.id);
     portfolioItem.innerHTML = `
-      <div class="portfolio-content h-100">
-        <img data-src="${item.image}" class="img-fluid fixed-height py-5 border lazy-loading" alt="${item.title}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E">
+      <div class="portfolio-card h-100">
+        <div class="portfolio-img-container">
+          <img data-src="${item.image}" class="img-fluid lazy-loading" alt="${item.title}" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Crect width='100%25' height='100%25' fill='%23f0f0f0'/%3E%3C/svg%3E">
+          <div class="portfolio-hover">
+            <div class="portfolio-links">
+              <a href="${item.image}" title="${item.title}" data-gallery="portfolio-gallery-${item.category}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="${item.detailsLink}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div>
         <div class="portfolio-info">
+          <span class="portfolio-category">${categories.find(cat => cat.filter === item.category)?.name || 'Uncategorized'}</span>
           <h4>${item.title}</h4>
           <p>${item.description}</p>
-          <a href="${item.image}" title="${item.title}" data-gallery="portfolio-gallery-${item.category}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-          <a href="${item.detailsLink}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
         </div>
       </div>
     `;

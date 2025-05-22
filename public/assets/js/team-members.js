@@ -8,9 +8,9 @@ const teamMembers = [
   {
     id: 1,
     name: "Nazir Kazimi",
-    position: "Chief executive Officer",
+    position: "Chief Executive Officer",
     image: "assets/img/team/nazir.jpg",
-    bio: "Innovating with cutting-edge technology to drive success and efficiency.",
+    bio: "Leading our vision with strategic direction and fostering innovation across all business domains.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -23,7 +23,7 @@ const teamMembers = [
     name: "Lam Jingan",
     position: "Chief Technology Officer",
     image: "assets/img/team/lam.png",
-    bio: "Ensuring operational excellence and smooth execution of projects.",
+    bio: "Guiding our technological strategy and overseeing the development of cutting-edge solutions.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -34,9 +34,9 @@ const teamMembers = [
   {
     id: 3,
     name: "Ruben Granados",
-    position: "Full Stack Developer",
+    position: "Software Developer",
     image: "assets/img/team/ruben.png",
-    bio: "Crafting strategies that enhance brand visibility and customer engagement.",
+    bio: "Building robust applications and implementing efficient solutions to complex technical challenges.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -46,10 +46,10 @@ const teamMembers = [
   },
   {
     id: 4,
-    name: "Arian Koshelenko",
-    position: "3D web developer & VR developer",
-    image: "assets/img/team/arian.jpg",
-    bio: "Designing intuitive and user-friendly interfaces that delight users.",
+    name: "Jhon Alejandro",
+    position: "Blockchain Developer",
+    image: "assets/img/team/jhon.jpg",
+    bio: "Specializing in smart contract development and creating secure blockchain infrastructure solutions.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -58,11 +58,11 @@ const teamMembers = [
     }
   },
   {
-    id: 4,
+    id: 5,
     name: "Nikita Dulenko",
     position: "Blockchain Developer",
     image: "assets/img/team/nikita.png",
-    bio: "Designing intuitive and user-friendly interfaces that delight users.",
+    bio: "Implementing secure blockchain solutions and developing decentralized applications with leading protocols.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
@@ -71,18 +71,45 @@ const teamMembers = [
     }
   },
   {
-    id: 4,
+    id: 6,
     name: "David Ricardo",
     position: "AI Engineer",
     image: "assets/img/team/david.png",
-    bio: "Designing intuitive and user-friendly interfaces that delight users.",
+    bio: "Developing advanced AI models and implementing machine learning solutions to enhance our products.",
     social: {
       twitter: "https://twitter.com",
       facebook: "https://facebook.com",
       instagram: "https://instagram.com",
       linkedin: "https://linkedin.com"
     }
-  }
+  },
+  {
+    id: 7,
+    name: "Jhon Alejandro",
+    position: "Blockchain Developer",
+    image: "assets/img/team/jhon.jpg",
+    bio: "Specializing in smart contract development and creating secure blockchain infrastructure solutions.",
+    social: {
+      twitter: "https://twitter.com",
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      linkedin: "https://linkedin.com"
+    }
+  },
+  
+  {
+    id: 8,
+    name: "Arian Koshelenko",
+    position: "3D web developer & VR developer",
+    image: "assets/img/team/arian.jpg",
+    bio: "Creating immersive 3D experiences and developing virtual reality applications for next-gen engagement.",
+    social: {
+      twitter: "https://twitter.com",
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      linkedin: "https://linkedin.com"
+    }
+  },
 ];
 
 // Department-specific team members
@@ -93,7 +120,7 @@ const departmentTeamMembers = {
       name: "Thomas Wilson",
       position: "Senior Developer",
       image: "assets/img/team/team-05.png",
-      bio: "Building robust and scalable applications with expertise in multiple programming languages.",
+      bio: "Leading complex development projects with expertise in architecture design and performance optimization.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -106,7 +133,7 @@ const departmentTeamMembers = {
       name: "Laura Chen",
       position: "DevOps Engineer",
       image: "assets/img/team/team-06.png",
-      bio: "Streamlining development processes and ensuring smooth deployment and operation of applications.",
+      bio: "Implementing CI/CD pipelines and managing cloud infrastructure to ensure reliable and scalable operations.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -121,7 +148,7 @@ const departmentTeamMembers = {
       name: "Alex Rodriguez",
       position: "Graphic Designer",
       image: "assets/img/team/team-07.png",
-      bio: "Creating captivating visual designs that elevate brand identity and user experience.",
+      bio: "Crafting compelling visual assets and brand materials that communicate our identity and values.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
@@ -134,7 +161,7 @@ const departmentTeamMembers = {
       name: "Priya Sharma",
       position: "UI/UX Researcher",
       image: "assets/img/team/team-08.png",
-      bio: "Conducting user research to inform design decisions and enhance user experience.",
+      bio: "Analyzing user behavior and feedback to design intuitive interfaces that enhance user satisfaction.",
       social: {
         twitter: "https://twitter.com",
         facebook: "https://facebook.com",
