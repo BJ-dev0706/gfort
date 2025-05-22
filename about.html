@@ -3,36 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Services - Gfort</title>
+    <title>About Gfort | Leading Tech Agency for 3D Web, Blockchain & AI Solutions</title>
     <meta
-      content="Explore Gfort's comprehensive tech services including 3D Web & VR Development, Blockchain, AI Solutions, Mobile App Development, and Full Stack Engineering."
+      content="Learn about Gfort, a premier tech agency with expert teams in 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps. Our history, mission, and values."
       name="description"
     />
     <meta
-      content="tech services, 3D web development, VR development, blockchain development, AI solutions, mobile app development, full stack engineering"
+      content="about gfort, tech agency, company history, tech solutions, 3D web, blockchain, AI, mobile development, digital innovation, tech company"
       name="keywords"
     />
     <meta content="Gfort Technologies" name="author" />
 
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gfort.org/about.html" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gfort.org/services.html" />
-    <meta property="og:title" content="Tech Services - Gfort" />
+    <meta property="og:url" content="https://gfort.org/about.html" />
+    <meta property="og:title" content="About Gfort - Innovative Tech Agency | Our Story" />
     <meta
       property="og:description"
-      content="Explore Gfort's comprehensive tech services including 3D Web & VR Development, Blockchain, AI Solutions, Mobile App Development, and Full Stack Engineering."
+      content="Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology. Discover our mission, values and expertise."
     />
     <meta property="og:image" content="assets/img/logo/og-image.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://gfort.org/services.html" />
-    <meta property="twitter:title" content="Tech Services - Gfort" />
+    <meta property="twitter:url" content="https://gfort.org/about.html" />
+    <meta
+      property="twitter:title"
+      content="About Gfort - Innovative Tech Agency | Our Story"
+    />
     <meta
       property="twitter:description"
-      content="Explore Gfort's comprehensive tech services including 3D Web & VR Development, Blockchain, AI Solutions, Mobile App Development, and Full Stack Engineering."
+      content="Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology. Discover our mission, values and expertise."
     />
     <meta property="twitter:image" content="assets/img/logo/og-image.png" />
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://gfort.org/about.html"
+      },
+      "headline": "About Gfort Technologies",
+      "description": "Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology.",
+      "image": "https://gfort.org/assets/img/about.jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Gfort Technologies",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gfort.org/assets/img/logo/logo-dark.png"
+        }
+      }
+    }
+    </script>
 
     <!-- Favicons -->
     <link href="assets/img/logo/favicon.png" rel="icon" />
@@ -63,39 +92,54 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Services",
-        "provider": {
-          "@type": "Organization",
-          "name": "Gfort Technologies",
-          "url": "https://gfort.org"
-        },
-        "serviceType": "Services",
-        "description": "Services of Gfort Technologies",
-        "offers": {
-          "@type": "Offer",
-          "price": "1000.00",
-          "priceCurrency": "EUR"
-        },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "40.4168",
-            "longitude": "-3.7038"
-          },
-          "geoRadius": "5000"
-        },
-        "image": "https://gfort.org/assets/img/hero-bg.png"
+
+    <style>
+      .achievements {
+        padding: 60px 0;
       }
-    </script>
+
+      .section-bg {
+        background-color: #f9f9f9;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .achievement-item {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+      }
+
+      .achievement-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .achievement-item i {
+        font-size: 3rem;
+        color: #e96b56;
+        margin-bottom: 20px;
+      }
+
+      .achievement-item h4 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .achievement-item p {
+        font-size: 1.1rem;
+        color: #6c757d;
+      }
+    </style>
   </head>
 
-  <body class="services-page">
+  <body class="about-page">
     <header id="header" class="header sticky-top">
       <div class="topbar d-flex align-items-center">
         <div
@@ -134,19 +178,18 @@
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
-          <a href="/" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo/logo-dark.png" alt="" srcset="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="services" class="active">Services</a></li>
-              <li><a href="portfolio">Portfolio</a></li>
-              <li><a href="team">Team</a></li>
-
-              <li><a href="contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -160,256 +203,224 @@
         <div class="container">
           <nav class="breadcrumbs">
             <ol>
-              <li><a href="/">Home</a></li>
-              <li class="current">Services</li>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">About</li>
             </ol>
           </nav>
-          <h1>Services</h1>
+          <h1>About</h1>
         </div>
       </div>
       <!-- End Page Title -->
 
-      <!-- Services Section -->
-      <section id="services" class="section services">
-        <div class="container">
-          <div class="row gy-4">
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-box-seam"></i>
-                </div>
-                <a href="3d-vr.html" class="stretched-link">
-                  <h3>3D Web & VR Development</h3>
-                </a>
-                <p>
-                  Build immersive 3D experiences and VR environments with WebGL,
-                  Three.js, and interactive design frameworks.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-currency-bitcoin"></i>
-                </div>
-                <a href="blockchain.html" class="stretched-link">
-                  <h3>Blockchain Development</h3>
-                </a>
-                <p>
-                  Launch secure, scalable smart contracts and DApps using
-                  Ethereum, Solana, TON, and more.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-cpu"></i>
-                </div>
-                <a href="ai-solutions.html" class="stretched-link">
-                  <h3>AI Solutions</h3>
-                </a>
-                <p>
-                  Integrate intelligent automation, GPT-based chat, computer
-                  vision, and predictive analytics into your product workflows.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-phone"></i>
-                </div>
-                <a href="mobile-development.html" class="stretched-link">
-                  <h3>Mobile App Development</h3>
-                </a>
-                <p>
-                  Create native and cross-platform apps using React Native,
-                  Flutter, or Swift—built for performance and scale.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-code-slash"></i>
-                </div>
-                <a href="fullstack.html" class="stretched-link">
-                  <h3>Full Stack Development</h3>
-                </a>
-                <p>
-                  From frontend design to backend architecture and APIs, we
-                  deliver robust web solutions using modern frameworks.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-
-            <div
-              class="col-lg-4 col-md-6"
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              <div class="service-item position-relative">
-                <div class="icon">
-                  <i class="bi bi-palette"></i>
-                </div>
-                <a href="ui-ux-design.html" class="stretched-link">
-                  <h3>UI/UX Design</h3>
-                </a>
-                <p>
-                  Design sleek, user-first interfaces that deliver clarity,
-                  engagement, and seamless interaction across platforms.
-                </p>
-              </div>
-            </div>
-            <!-- End Service Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Services Section -->
-
-      <!-- Skills Section -->
-      <section id="skills" class="skills section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Our Skills</h2>
-          <p>
-            Explore the technologies and expertise that power Gfort's digital
-            innovation.
-          </p>
-        </div>
-        <!-- End Section Title -->
-
+      <section id="about" class="section about">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
+          <div class="row gy-4">
+            <div class="col-lg-6 order-1 order-lg-2">
               <img
-                src="assets/img/skills.jpg"
+                src="assets/img/about.jpg"
                 class="img-fluid"
-                alt="Gfort Skills"
+                alt="About Gfort"
               />
             </div>
-
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Empowering Brands with Advanced Tech</h3>
+            <div class="col-lg-6 order-2 order-lg-1 content">
+              <h3>Building the Future with Gfort</h3>
               <p class="fst-italic">
-                Our team blends creative vision with technical mastery to craft
-                future-ready solutions across industries.
+                At Gfort, we empower bold ideas with transformative
+                technology—turning vision into scalable, real-world solutions.
               </p>
-
-              <div class="skills-content skills-animation">
-                <div class="progress">
-                  <span class="skill"
-                    ><span>React / Next.js</span> <i class="val">95%</i></span
+              <ul>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <span
+                    >Immersive 3D and VR development that brings your brand to
+                    life in digital space.</span
                   >
-                  <div class="progress-bar-wrap">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="95"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"
-                    ><span>WebGL / Three.js</span> <i class="val">90%</i></span
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <span
+                    >Secure and innovative blockchain systems powering next-gen
+                    decentralized platforms.</span
                   >
-                  <div class="progress-bar-wrap">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"
-                    ><span>Solidity / Smart Contracts</span>
-                    <i class="val">85%</i></span
+                </li>
+                <li>
+                  <i class="bi bi-arrow-right-circle"></i>
+                  <span
+                    >AI-driven solutions and full stack development for
+                    intelligent, high-performing apps.</span
                   >
-                  <div class="progress-bar-wrap">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"
-                    ><span>AI Integration (GPT, Vision)</span>
-                    <i class="val">80%</i></span
-                  >
-                  <div class="progress-bar-wrap">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-
-                <div class="progress">
-                  <span class="skill"
-                    ><span>Mobile App Development</span>
-                    <i class="val">85%</i></span
-                  >
-                  <div class="progress-bar-wrap">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
+                </li>
+              </ul>
+              <p style="text-align: justify">
+                Gfort is your strategic partner in digital innovation. We
+                specialize in crafting high-impact experiences across web,
+                mobile, blockchain, and AI. Whether it's developing an immersive
+                3D platform, launching a secure Web3 product, or integrating
+                intelligent automation into your business, our expert team
+                delivers future-ready technology that scales. At Gfort, we don't
+                just build—we elevate.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Skills Section -->
+
+      <!-- Stats Section -->
+      <section id="stats" class="stats section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-emoji-smile"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="232"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Happy Clients</strong>
+                  <span>delighted with our innovative solutions</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-folder-check"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="521"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Projects Completed</strong>
+                  <span>successfully delivered with excellence</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-headset"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="1453"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Hours Of Support</strong>
+                  <span>dedicated to client success</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stats-item">
+                <i class="bi bi-people"></i>
+                <span
+                  data-purecounter-start="0"
+                  data-purecounter-end="13"
+                  data-purecounter-duration="1"
+                  class="purecounter"
+                ></span>
+                <p>
+                  <strong>Dedicated Team Members</strong>
+                  <span>driving innovation and success</span>
+                </p>
+              </div>
+            </div>
+            <!-- End Stats Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Stats Section -->
+
+      <section id="achievements" class="achievements section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Our Achievements</h2>
+            <p>
+              Gfort may be young, but we're already making waves. Here's what we've accomplished so far—and we're just getting started.
+            </p>
+          </div>
+          <div class="row">
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-lightbulb-fill"></i>
+                <h4>Founded with Purpose</h4>
+                <p>
+                  Built with a vision to unify immersive tech, Web3, and AI into accessible, impactful digital products.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-people-fill"></i>
+                <h4>First 10 Clients</h4>
+                <p>
+                  Successfully completed client projects across 3D websites, DeFi tools, AI assistants, and mobile apps.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-boxes"></i>
+                <h4>Launched 7 MVPs</h4>
+                <p>
+                  Helped startups bring their visions to life with fast, functional MVPs in blockchain, VR, and SaaS.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-stars"></i>
+                <h4>5-Star Feedback</h4>
+                <p>
+                  Earned consistent 5-star ratings for performance, speed, and quality from every delivery partner so far.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-cpu-fill"></i>
+                <h4>Custom AI Tools Deployed</h4>
+                <p>
+                  Delivered intelligent GPT-powered tools, such as resume generators, chatbots, and data automation flows.
+                </p>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6">
+              <div class="achievement-item">
+                <i class="bi bi-globe2"></i>
+                <h4>International Reach</h4>
+                <p>
+                  Served clients across 6+ countries including the U.S., Spain, Japan, UAE, France, and Germany.
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Team Members Section -->
+      <section id="team" class="team section">
+        <!-- Content will be dynamically loaded by TeamMembersModule -->
+      </section>
+      <!-- /Team Members Section -->
 
       <!-- Clients Section -->
       <section id="clients" class="section clients">
@@ -571,7 +582,7 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center">
               <span class="sitename">Gfort</span>
             </a>
             <div class="footer-contact pt-3">
@@ -590,19 +601,19 @@
             <ul>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="about">About us</a>
+                <a href="about.html">About us</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="services">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="contact">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -653,7 +664,7 @@
           © <span>Copyright</span> <strong class="px-1 sitename">Gfort</strong>
           <span>All Rights Reserved</span>
         </p>
-        <div class="credits">Designed by <a href="/">Gfort</a></div>
+        <div class="credits">Designed by <a href="index.html">Gfort</a></div>
       </div>
     </footer>
 
@@ -681,17 +692,26 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    
     <!-- Testimonials Module -->
     <script src="assets/js/testimonials.js"></script>
     
     <!-- SEO Optimizer -->
     <script src="assets/js/seo-optimizer.js"></script>
     
+    <!-- Team Members Module -->
+    <script src="assets/js/team-members.js"></script>
+    <script src="assets/js/init-team-module.js"></script>
+
     <script>
-      // Initialize testimonials once DOM is loaded
       document.addEventListener('DOMContentLoaded', function() {
         // Render testimonials in grid layout
-        TestimonialsModule.renderTestimonialsGrid('testimonials');
+        TestimonialsModule.renderTestimonialsGrid(
+          'testimonials', 
+          null, 
+          'What Our Clients Say', 
+          'Discover why businesses trust Gfort for their technology needs'
+        );
       });
     </script>
   </body>

@@ -3,65 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>About Gfort | Leading Tech Agency for 3D Web, Blockchain & AI Solutions</title>
+    <title>Portfolio - Gfort</title>
     <meta
-      content="Learn about Gfort, a premier tech agency with expert teams in 3D Web, Blockchain, Full Stack Development, AI, and Mobile Apps. Our history, mission, and values."
+      content="View Gfort's impressive portfolio of tech projects spanning 3D Web, Blockchain, Mobile Apps, and AI solutions."
       name="description"
     />
     <meta
-      content="about gfort, tech agency, company history, tech solutions, 3D web, blockchain, AI, mobile development, digital innovation, tech company"
+      content="portfolio, tech projects, case studies, 3D web projects, blockchain solutions, mobile apps, AI implementations"
       name="keywords"
     />
     <meta content="Gfort Technologies" name="author" />
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://gfort.org/about.html" />
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gfort.org/about.html" />
-    <meta property="og:title" content="About Gfort - Innovative Tech Agency | Our Story" />
+    <meta property="og:url" content="https://gfort.org/portfolio.html" />
+    <meta property="og:title" content="Portfolio - Gfort's Tech Projects" />
     <meta
       property="og:description"
-      content="Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology. Discover our mission, values and expertise."
+      content="Explore Gfort's impressive portfolio of innovative tech projects spanning 3D Web, Blockchain, Mobile Apps, and AI solutions."
     />
     <meta property="og:image" content="assets/img/logo/og-image.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://gfort.org/about.html" />
+    <meta property="twitter:url" content="https://gfort.org/portfolio.html" />
     <meta
       property="twitter:title"
-      content="About Gfort - Innovative Tech Agency | Our Story"
+      content="Portfolio - Gfort's Tech Projects"
     />
     <meta
       property="twitter:description"
-      content="Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology. Discover our mission, values and expertise."
+      content="Explore Gfort's impressive portfolio of innovative tech projects spanning 3D Web, Blockchain, Mobile Apps, and AI solutions."
     />
     <meta property="twitter:image" content="assets/img/logo/og-image.png" />
-
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AboutPage",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://gfort.org/about.html"
-      },
-      "headline": "About Gfort Technologies",
-      "description": "Learn about Gfort, a multidisciplinary tech agency empowering bold ideas with transformative technology.",
-      "image": "https://gfort.org/assets/img/about.jpg",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Gfort Technologies",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://gfort.org/assets/img/logo/logo-dark.png"
-        }
-      }
-    }
-    </script>
 
     <!-- Favicons -->
     <link href="assets/img/logo/favicon.png" rel="icon" />
@@ -92,54 +66,109 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    
+    <!-- Lazy Loading CSS -->
+    <link href="assets/css/lazy-load.css" rel="stylesheet" />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Portfolio",
+        "provider": {
+          "@type": "Organization",
+          "name": "Gfort Technologies",
+          "url": "https://gfort.org"
+        },
+        "serviceType": "Portfolio",
+        "description": "Portfolio of Gfort Technologies",
+        "offers": {
+          "@type": "Offer",
+          "price": "1000.00",
+          "priceCurrency": "EUR"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.4168",
+            "longitude": "-3.7038"
+          },
+          "geoRadius": "5000"
+        },
+        "image": "https://gfort.org/assets/img/hero-bg.png"
+      }
+    </script>
 
     <style>
-      .achievements {
-        padding: 60px 0;
+      /* Reset default margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      .section-bg {
-        background-color: #f9f9f9;
+      /* Full-width search bar */
+      .search-bar {
+        width: 100%;
+        max-width: 600px; /* Adjust maximum width as needed */
+        margin: 20px auto; /* Center the search bar horizontally */
       }
 
-      .section-title {
-        text-align: center;
-        margin-bottom: 40px;
+      .search-bar form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        background-color: #f0f0f0;
+        border-radius: 25px;
+        overflow: hidden;
       }
 
-      .achievement-item {
-        text-align: center;
-        padding: 20px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
-        transition: transform 0.3s ease;
+      .search-bar input[type="text"] {
+        width: calc(100% - 50px); /* Adjust input width for the icon */
+        height: 100%;
+        padding: 0 20px;
+        border: none;
+        background: none;
+        font-size: 16px;
+        color: #333;
+        outline: none;
       }
 
-      .achievement-item:hover {
-        transform: translateY(-10px);
+      .search-bar button {
+        width: 50px;
+        height: 100%;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
       }
 
-      .achievement-item i {
-        font-size: 3rem;
-        color: #e96b56;
-        margin-bottom: 20px;
+      .search-bar button:hover {
+        background-color: #ddd;
       }
 
-      .achievement-item h4 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-      }
-
-      .achievement-item p {
-        font-size: 1.1rem;
-        color: #6c757d;
+      /* Icon styles (Bootstrap icons used here) */
+      .bi-search {
+        font-size: 20px;
+        color: #555;
       }
     </style>
   </head>
 
-  <body class="about-page">
+  <body class="portfolio-page">
     <header id="header" class="header sticky-top">
       <div class="topbar d-flex align-items-center">
         <div
@@ -178,18 +207,19 @@
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
-          <a href="/" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo/logo-dark.png" alt="" srcset="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="about" class="active">About</a></li>
-              <li><a href="services">Services</a></li>
-              <li><a href="portfolio">Portfolio</a></li>
-              <li><a href="team">Team</a></li>
-              <li><a href="contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html" class="active">Portfolio</a></li>
+              <li><a href="team.html">Team</a></li>
+
+              <li><a href="contact.html">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -203,224 +233,60 @@
         <div class="container">
           <nav class="breadcrumbs">
             <ol>
-              <li><a href="/">Home</a></li>
-              <li class="current">About</li>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Portfolio</li>
             </ol>
           </nav>
-          <h1>About</h1>
+          <h1>Portfolio</h1>
         </div>
       </div>
       <!-- End Page Title -->
+      <div class="search-bar">
+        <form action="#" method="get">
+          <input
+            type="text"
+            placeholder="Search..."
+            name="search"
+            id="portfolioSearch"
+          />
+          <button type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- Portfolio Filters -->
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              id="portfolioFilters"
+            >
+              <!-- Filter buttons will be populated by JavaScript -->
+            </ul>
+            <!-- End Portfolio Filters -->
 
-      <section id="about" class="section about">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-6 order-1 order-lg-2">
-              <img
-                src="assets/img/about.jpg"
-                class="img-fluid"
-                alt="About Gfort"
-              />
+            <!-- End Portfolio Container -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              id="portfolioContainer"
+            >
+              <!-- Portfolio items will be populated by JavaScript -->
             </div>
-            <div class="col-lg-6 order-2 order-lg-1 content">
-              <h3>Building the Future with Gfort</h3>
-              <p class="fst-italic">
-                At Gfort, we empower bold ideas with transformative
-                technology—turning vision into scalable, real-world solutions.
-              </p>
-              <ul>
-                <li>
-                  <i class="bi bi-arrow-right-circle"></i>
-                  <span
-                    >Immersive 3D and VR development that brings your brand to
-                    life in digital space.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-arrow-right-circle"></i>
-                  <span
-                    >Secure and innovative blockchain systems powering next-gen
-                    decentralized platforms.</span
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-arrow-right-circle"></i>
-                  <span
-                    >AI-driven solutions and full stack development for
-                    intelligent, high-performing apps.</span
-                  >
-                </li>
-              </ul>
-              <p style="text-align: justify">
-                Gfort is your strategic partner in digital innovation. We
-                specialize in crafting high-impact experiences across web,
-                mobile, blockchain, and AI. Whether it's developing an immersive
-                3D platform, launching a secure Web3 product, or integrating
-                intelligent automation into your business, our expert team
-                delivers future-ready technology that scales. At Gfort, we don't
-                just build—we elevate.
-              </p>
-            </div>
+            <!-- End Portfolio Container -->
           </div>
         </div>
       </section>
-
-      <!-- Stats Section -->
-      <section id="stats" class="stats section">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-emoji-smile"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="232"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>
-                  <strong>Happy Clients</strong>
-                  <span>delighted with our innovative solutions</span>
-                </p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-folder-check"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="521"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>
-                  <strong>Projects Completed</strong>
-                  <span>successfully delivered with excellence</span>
-                </p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-headset"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="1453"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>
-                  <strong>Hours Of Support</strong>
-                  <span>dedicated to client success</span>
-                </p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-
-            <div class="col-lg-3 col-md-6">
-              <div class="stats-item">
-                <i class="bi bi-people"></i>
-                <span
-                  data-purecounter-start="0"
-                  data-purecounter-end="13"
-                  data-purecounter-duration="1"
-                  class="purecounter"
-                ></span>
-                <p>
-                  <strong>Dedicated Team Members</strong>
-                  <span>driving innovation and success</span>
-                </p>
-              </div>
-            </div>
-            <!-- End Stats Item -->
-          </div>
-        </div>
-      </section>
-      <!-- /Stats Section -->
-
-      <section id="achievements" class="achievements section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Our Achievements</h2>
-            <p>
-              Gfort may be young, but we're already making waves. Here's what we've accomplished so far—and we're just getting started.
-            </p>
-          </div>
-          <div class="row">
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-lightbulb-fill"></i>
-                <h4>Founded with Purpose</h4>
-                <p>
-                  Built with a vision to unify immersive tech, Web3, and AI into accessible, impactful digital products.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-people-fill"></i>
-                <h4>First 10 Clients</h4>
-                <p>
-                  Successfully completed client projects across 3D websites, DeFi tools, AI assistants, and mobile apps.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-boxes"></i>
-                <h4>Launched 7 MVPs</h4>
-                <p>
-                  Helped startups bring their visions to life with fast, functional MVPs in blockchain, VR, and SaaS.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-stars"></i>
-                <h4>5-Star Feedback</h4>
-                <p>
-                  Earned consistent 5-star ratings for performance, speed, and quality from every delivery partner so far.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-cpu-fill"></i>
-                <h4>Custom AI Tools Deployed</h4>
-                <p>
-                  Delivered intelligent GPT-powered tools, such as resume generators, chatbots, and data automation flows.
-                </p>
-              </div>
-            </div>
-      
-            <div class="col-lg-4 col-md-6">
-              <div class="achievement-item">
-                <i class="bi bi-globe2"></i>
-                <h4>International Reach</h4>
-                <p>
-                  Served clients across 6+ countries including the U.S., Spain, Japan, UAE, France, and Germany.
-                </p>
-              </div>
-            </div>
-      
-          </div>
-        </div>
-      </section>
-      
-
-      <!-- Team Members Section -->
-      <section id="team" class="team section">
-        <!-- Content will be dynamically loaded by TeamMembersModule -->
-      </section>
-      <!-- /Team Members Section -->
+      <!-- /Portfolio Section -->
 
       <!-- Clients Section -->
       <section id="clients" class="section clients">
@@ -540,7 +406,179 @@
 
       <!-- Testimonials Section -->
       <section id="testimonials" class="testimonials section">
-        
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+          <p>
+            Our clients share their experiences and success stories with Gfort's
+            innovative solutions.
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonial-1.png"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>John Doe</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Gfort transformed our digital presence with their
+                    innovative solutions. Their team's dedication and expertise
+                    exceeded our expectations.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonial-2.png"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Jane Smith</h3>
+                <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Working with Gfort was a game-changer for our business.
+                    They delivered exceptional results and provided invaluable
+                    support throughout the project.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonial-3.png"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>David Johnson</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Gfort's professionalism and attention to detail are
+                    unmatched. They not only met but exceeded our requirements,
+                    making them a trusted partner.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-5.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Emaly</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Choosing Gfort was the best decision we made. Their
+                    creativity and strategic insights helped us achieve
+                    remarkable growth in our online presence.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-6.png"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Jane</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >Gfort's commitment to quality and customer satisfaction is
+                    outstanding. They consistently deliver results that align
+                    perfectly with our business goals.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-7.png"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <h3>Sarah Martinez</h3>
+                <h4>Store Owner</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span
+                    >I highly recommend Gfort for their exceptional service and
+                    innovative solutions. Their team is responsive,
+                    knowledgeable, and a pleasure to work with.</span
+                  >
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+        </div>
       </section>
       <!-- /Testimonials Section -->
     </main>
@@ -582,7 +620,7 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center">
               <span class="sitename">Gfort</span>
             </a>
             <div class="footer-contact pt-3">
@@ -601,19 +639,19 @@
             <ul>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="about">About us</a>
+                <a href="about.html">About us</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="services">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="contact">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -664,7 +702,7 @@
           © <span>Copyright</span> <strong class="px-1 sitename">Gfort</strong>
           <span>All Rights Reserved</span>
         </p>
-        <div class="credits">Designed by <a href="/">Gfort</a></div>
+        <div class="credits">Designed by <a href="index.html">Gfort</a></div>
       </div>
     </footer>
 
@@ -690,29 +728,16 @@
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+    <!-- Lazy Loading JS -->
+    <script src="assets/js/lazy-load.js"></script>
+    
+    <!-- Portfolio Data -->
+    <script src="assets/js/portfolio-data.js"></script>
+    
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     
-    <!-- Testimonials Module -->
-    <script src="assets/js/testimonials.js"></script>
-    
-    <!-- SEO Optimizer -->
-    <script src="assets/js/seo-optimizer.js"></script>
-    
-    <!-- Team Members Module -->
-    <script src="assets/js/team-members.js"></script>
-    <script src="assets/js/init-team-module.js"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Render testimonials in grid layout
-        TestimonialsModule.renderTestimonialsGrid(
-          'testimonials', 
-          null, 
-          'What Our Clients Say', 
-          'Discover why businesses trust Gfort for their technology needs'
-        );
-      });
-    </script>
+    <!-- Portfolio JS File -->
+    <script src="assets/js/portfolio.js"></script>
   </body>
 </html>

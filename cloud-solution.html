@@ -3,45 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Software Development - Gfort</title>
+    <title>Cloud Solutions - Gfort</title>
     <meta
-      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
+      content="Transform your business with Gfort's scalable cloud solutions offering seamless migration, optimization, security, and managed services for businesses of all sizes."
       name="description"
     />
     <meta
-      content="software development, custom software, enterprise applications, cloud solutions, cross-platform software, agile development, software engineering"
+      content="cloud solutions, cloud computing, cloud migration, cloud security, cloud optimization, AWS, Azure, Google Cloud, hybrid cloud, cloud infrastructure"
       name="keywords"
     />
     <meta content="Gfort Technologies" name="author" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://gfort.org/software-development.html"
-    />
-    <meta property="og:title" content="Software Development Services - Gfort" />
+    <meta property="og:url" content="https://gfort.org/cloud-solution.html" />
+    <meta property="og:title" content="Cloud Solutions - Gfort" />
     <meta
       property="og:description"
-      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
+      content="Transform your business with Gfort's scalable cloud solutions offering seamless migration, optimization, security, and managed services for businesses of all sizes."
     />
-    <meta property="og:image" content="assets/img/software.png" />
+    <meta property="og:image" content="assets/img/cloud.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://gfort.org/software-development.html"
+      content="https://gfort.org/cloud-solution.html"
     />
-    <meta
-      property="twitter:title"
-      content="Software Development Services - Gfort"
-    />
+    <meta property="twitter:title" content="Cloud Solutions - Gfort" />
     <meta
       property="twitter:description"
-      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
+      content="Transform your business with Gfort's scalable cloud solutions offering seamless migration, optimization, security, and managed services for businesses of all sizes."
     />
-    <meta property="twitter:image" content="assets/img/software.png" />
+    <meta property="twitter:image" content="assets/img/cloud.png" />
 
     <!-- Favicons -->
     <link href="assets/img/logo/favicon.png" rel="icon" />
@@ -71,131 +65,81 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Web Development Services",
-        "provider": {
-          "@type": "Organization",
-          "name": "Gfort Technologies",
-          "url": "https://gfort.org"
-        },
-        "serviceType": "Web Development",
-        "description": "Professional web development services including responsive websites, progressive web apps, and enterprise web applications built with modern technologies.",
-        "offers": {
-          "@type": "Offer",
-          "price": "1000.00",
-          "priceCurrency": "EUR"
-        },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "40.4168",
-            "longitude": "-3.7038"
-          },
-          "geoRadius": "5000"
-        },
-        "image": "https://gfort.org/assets/img/hero-bg.png"
-      }
-    </script>
-
     <style>
-      .page-header {
-        background-image: url("assets/img/software.png");
-        background-size: cover;
-        background-position: center;
-        color: #fff;
+      body {
+        font-family: "Open Sans", sans-serif;
+        background-color: #f8f9fa;
+        color: #666;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url("assets/img/cloud.png") center/cover no-repeat;
         padding: 120px 0;
         text-align: center;
+        color: #fff;
       }
 
-      .page-header h1 {
+      .hero h1 {
         font-size: 3.5rem;
-        font-weight: 700;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
 
-      .page-header p {
-        font-size: 1.5rem;
+      .hero p {
+        font-size: 1.2rem;
         margin-bottom: 40px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
       }
 
-      .service-features {
-        background-color: #f8f9fa;
+      .hero .btn {
+        background-color: #e96b56;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero .btn:hover {
+        background-color: #c7513c;
+      }
+
+      /* Services Section */
+      .services {
         padding: 80px 0;
       }
 
-      .feature-item {
+      .service-item {
+        background-color: #fff;
+        padding: 30px;
         text-align: center;
-        margin-bottom: 40px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
       }
 
-      .feature-item i {
+      .service-item:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-item .icon {
         font-size: 3rem;
-        color: #e96b56;
         margin-bottom: 20px;
+        color: #007bff;
       }
 
-      .feature-item h3 {
-        font-size: 2rem;
-        font-weight: 600;
+      .service-item h3 {
+        font-size: 1.8rem;
         margin-bottom: 15px;
+        color: #333;
       }
 
-      .feature-item p {
+      .service-item p {
         font-size: 1.1rem;
         color: #6c757d;
-      }
-
-      .btn-primary {
-        background-color: #e96b56;
-        border-color: #e96b56;
-        padding: 12px 30px;
-        font-size: 1.1rem;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-      }
-
-      .btn-primary:hover {
-        background-color: #c7513c;
-        border-color: #c7513c;
-      }
-
-      .contact-us {
-        background-color: #333;
-        color: #fff;
-        padding: 80px 0;
-        text-align: center;
-      }
-
-      .contact-us h2 {
-        font-size: 2.5rem;
-        margin-bottom: 30px;
-      }
-
-      .contact-us p {
-        font-size: 1.1rem;
-        color: #ccc;
-        margin-bottom: 30px;
-      }
-
-      .contact-us .btn {
-        background-color: #e96b56;
-        border-color: #e96b56;
-        padding: 12px 30px;
-        font-size: 1.1rem;
-        border-radius: 5px;
-        transition: all 0.3s ease;
-      }
-
-      .contact-us .btn:hover {
-        background-color: #c7513c;
-        border-color: #c7513c;
       }
 
       .testimonials {
@@ -300,19 +244,18 @@
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
-          <a href="/" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo/logo-dark.png" alt="" srcset="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="/" class="active">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="services">Services</a></li>
-              <li><a href="portfolio">Portfolio</a></li>
-              <li><a href="team">Team</a></li>
-
-              <li><a href="contact">Contact</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -321,34 +264,51 @@
     </header>
 
     <main id="main">
-      <section class="page-header">
+      <section class="hero">
         <div class="container">
-          <h1 data-aos="fade-up">Custom Software Development</h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="200"
-            style="text-align: center; color: black"
-          >
-            Enhance your business operations with tailored software solutions.
-          </p>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h1 data-aos="fade-up">
+                Power Your Business with Cloud Solutions
+              </h1>
+              <p
+                class="mt-4 mb-5"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style="text-align: center; margin-left: 200px; color: black"
+              >
+                Discover scalable cloud services that drive efficiency and
+                growth.
+              </p>
+              <a
+                href="#services"
+                class="btn"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >Explore Solutions</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="service-features">
+      <section id="services" class="services">
         <div class="container">
-          <h2 class="section-title" data-aos="fade-up">Our Services</h2>
-          <div class="row">
+          <h2 class="section-title text-center" data-aos="fade-up">
+            Our Cloud Services
+          </h2>
+          <div class="row justify-content-center">
             <div
               class="col-lg-4 col-md-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <div class="feature-item">
-                <i class="bi bi-laptop"></i>
-                <h3>Web Application Development</h3>
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-cloud"></i></div>
+                <h3>Cloud Migration</h3>
                 <p>
-                  Create scalable and responsive web applications tailored to
-                  your business needs.
+                  Migrate seamlessly to the cloud with our expert guidance and
+                  support.
                 </p>
               </div>
             </div>
@@ -357,12 +317,12 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="feature-item">
-                <i class="bi bi-gear"></i>
-                <h3>Custom Software Solutions</h3>
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-speedometer2"></i></div>
+                <h3>Cloud Optimization</h3>
                 <p>
-                  Design and develop custom software solutions to streamline
-                  your business processes.
+                  Optimize your cloud infrastructure to improve performance and
+                  reduce costs.
                 </p>
               </div>
             </div>
@@ -371,12 +331,54 @@
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <div class="feature-item">
-                <i class="bi bi-cloud-upload"></i>
-                <h3>Cloud Integration</h3>
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-shield-check"></i></div>
+                <h3>Cloud Security</h3>
                 <p>
-                  Integrate cloud technologies to optimize storage,
-                  accessibility, and security of your data.
+                  Enhance your cloud security posture with robust solutions and
+                  best practices.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-database"></i></div>
+                <h3>Database Management</h3>
+                <p>
+                  Manage and optimize your databases efficiently on cloud
+                  platforms.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-server"></i></div>
+                <h3>Serverless Computing</h3>
+                <p>
+                  Explore the benefits of serverless architecture for scalable
+                  applications.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="icon"><i class="bi bi-cloud-arrow-down"></i></div>
+                <h3>Backup & Recovery</h3>
+                <p>
+                  Ensure data resilience and continuity with reliable backup and
+                  recovery solutions.
                 </p>
               </div>
             </div>
@@ -384,26 +386,30 @@
         </div>
       </section>
 
-      <section id="contact" class="contact-us">
+      <section id="cta" class="cta">
         <div class="container">
-          <h2 data-aos="fade-up">Ready to Get Started?</h2>
-          <p data-aos="fade-up" data-aos-delay="200">
-            Contact us today to discuss your project requirements and get a free
-            consultation.
-          </p>
-          <a
-            href="contact"
-            class="btn btn-primary"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            >Contact Us</a
-          >
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="section-title" data-aos="fade-up">
+                Ready to Transform Your Business with Cloud Solutions?
+              </h2>
+              <p class="mt-3 mb-5" data-aos="fade-up" data-aos-delay="200">
+                Contact us today to discuss your requirements and embark on a
+                cloud journey that drives innovation and efficiency.
+              </p>
+              <a
+                href="contact.html"
+                class="btn"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                >Contact Us</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials section-bg">
-        
-      </section>
+      <section id="testimonials" class="testimonials section-bg"></section>
     </main>
 
     <footer id="footer" class="footer position-relative">
@@ -443,7 +449,7 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center">
               <span class="sitename">Gfort</span>
             </a>
             <div class="footer-contact pt-3">
@@ -462,19 +468,19 @@
             <ul>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="about">About us</a>
+                <a href="about.html">About us</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="services">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="contact">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -525,7 +531,7 @@
           © <span>Copyright</span> <strong class="px-1 sitename">Gfort</strong>
           <span>All Rights Reserved</span>
         </p>
-        <div class="credits">Designed by <a href="/">Gfort</a></div>
+        <div class="credits">Designed by <a href="index.html">Gfort</a></div>
       </div>
     </footer>
 
@@ -560,15 +566,15 @@
     </script>
     <!-- Testimonials Module -->
     <script src="assets/js/testimonials.js"></script>
-    
+
     <!-- SEO Optimizer -->
     <script src="assets/js/seo-optimizer.js"></script>
-    
+
     <script>
       // Initialize testimonials once DOM is loaded
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener("DOMContentLoaded", function () {
         // Render testimonials in grid layout
-        TestimonialsModule.renderTestimonialsGrid('testimonials');
+        TestimonialsModule.renderTestimonialsGrid("testimonials");
       });
     </script>
   </body>

@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Digital Marketing - Gfort</title>
+    <title>Software Development - Gfort</title>
     <meta
-      content="Boost your online presence with Gfort's comprehensive digital marketing services including SEO, social media, content marketing, and paid advertising."
+      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
       name="description"
     />
     <meta
-      content="digital marketing, SEO, social media marketing, content marketing, PPC, online advertising, digital strategy, marketing analytics"
+      content="software development, custom software, enterprise applications, cloud solutions, cross-platform software, agile development, software engineering"
       name="keywords"
     />
     <meta content="Gfort Technologies" name="author" />
@@ -18,30 +18,30 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://gfort.org/digital-marketing.html"
+      content="https://gfort.org/software-development.html"
     />
-    <meta property="og:title" content="Digital Marketing Services - Gfort" />
+    <meta property="og:title" content="Software Development Services - Gfort" />
     <meta
       property="og:description"
-      content="Boost your online presence with Gfort's comprehensive digital marketing services including SEO, social media, content marketing, and paid advertising."
+      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
     />
-    <meta property="og:image" content="assets/img/marketing.png" />
+    <meta property="og:image" content="assets/img/software.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://gfort.org/digital-marketing.html"
+      content="https://gfort.org/software-development.html"
     />
     <meta
       property="twitter:title"
-      content="Digital Marketing Services - Gfort"
+      content="Software Development Services - Gfort"
     />
     <meta
       property="twitter:description"
-      content="Boost your online presence with Gfort's comprehensive digital marketing services including SEO, social media, content marketing, and paid advertising."
+      content="Gfort offers custom software development services with expertise in enterprise applications, cloud solutions, and cross-platform software."
     />
-    <meta property="twitter:image" content="assets/img/marketing.png" />
+    <meta property="twitter:image" content="assets/img/software.png" />
 
     <!-- Favicons -->
     <link href="assets/img/logo/favicon.png" rel="icon" />
@@ -71,102 +71,131 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Web Development Services",
+        "provider": {
+          "@type": "Organization",
+          "name": "Gfort Technologies",
+          "url": "https://gfort.org"
+        },
+        "serviceType": "Web Development",
+        "description": "Professional web development services including responsive websites, progressive web apps, and enterprise web applications built with modern technologies.",
+        "offers": {
+          "@type": "Offer",
+          "price": "1000.00",
+          "priceCurrency": "EUR"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.4168",
+            "longitude": "-3.7038"
+          },
+          "geoRadius": "5000"
+        },
+        "image": "https://gfort.org/assets/img/hero-bg.png"
+      }
+    </script>
+
     <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        background-color: #f9f9f9;
-        color: #444;
-        line-height: 1.6;
-      }
-
-      a {
-        color: #007bff;
-      }
-
-      a:hover {
-        color: #0056b3;
-      }
-
-      .section-title {
-        text-align: center;
-        margin-bottom: 60px;
-        font-size: 2.5rem;
-        color: #333;
-      }
-
-      /* Hero Section */
-      .hero {
-        background-image: url("assets/img/marketing.png");
+      .page-header {
+        background-image: url("assets/img/software.png");
         background-size: cover;
         background-position: center;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        color: #fff;
+        padding: 120px 0;
         text-align: center;
-        color: #fff;
-        position: relative;
       }
 
-      .hero-content {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-      }
-
-      .hero h1 {
-        font-size: 3rem;
+      .page-header h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
         margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
       }
 
-      .hero p {
-        font-size: 1.2rem;
-        margin-bottom: 30px;
+      .page-header p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
       }
 
-      .btn {
-        display: inline-block;
-        background-color: #e96b56;
-        color: #fff;
-        padding: 12px 24px;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .btn:hover {
-        background-color: #c7513c;
-      }
-
-      /* Services Section */
-      .services {
-        padding: 80px 0;
+      .service-features {
         background-color: #f8f9fa;
+        padding: 80px 0;
       }
 
-      .service-item {
-        background-color: #fff;
-        padding: 30px;
+      .feature-item {
         text-align: center;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
       }
 
-      .service-item .icon {
+      .feature-item i {
         font-size: 3rem;
+        color: #e96b56;
         margin-bottom: 20px;
-        color: #007bff;
       }
 
-      .service-item h3 {
-        font-size: 1.8rem;
+      .feature-item h3 {
+        font-size: 2rem;
+        font-weight: 600;
         margin-bottom: 15px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
 
-      .service-item p {
+      .feature-item p {
         font-size: 1.1rem;
         color: #6c757d;
+      }
+
+      .btn-primary {
+        background-color: #e96b56;
+        border-color: #e96b56;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background-color: #c7513c;
+        border-color: #c7513c;
+      }
+
+      .contact-us {
+        background-color: #333;
+        color: #fff;
+        padding: 80px 0;
+        text-align: center;
+      }
+
+      .contact-us h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+
+      .contact-us p {
+        font-size: 1.1rem;
+        color: #ccc;
+        margin-bottom: 30px;
+      }
+
+      .contact-us .btn {
+        background-color: #e96b56;
+        border-color: #e96b56;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .contact-us .btn:hover {
+        background-color: #c7513c;
+        border-color: #c7513c;
       }
 
       .testimonials {
@@ -271,19 +300,19 @@
         <div
           class="container position-relative d-flex align-items-center justify-content-between"
         >
-          <a href="/" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <img src="assets/img/logo/logo-dark.png" alt="" srcset="" />
           </a>
 
           <nav id="navmenu" class="navmenu">
             <ul>
-              <li><a href="/" class="active">Home</a></li>
-              <li><a href="about">About</a></li>
-              <li><a href="services">Services</a></li>
-              <li><a href="portfolio">Portfolio</a></li>
-              <li><a href="team">Team</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="team.html">Team</a></li>
 
-              <li><a href="contact">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
@@ -292,77 +321,62 @@
     </header>
 
     <main id="main">
-      <section class="hero">
+      <section class="page-header">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-              <div class="hero-content">
-                <h1>Digital Marketing Services</h1>
-                <p
-                  style="text-align: center; margin-left: 200px; color: #007bff"
-                >
-                  Enhance your online presence with our digital marketing
-                  solutions.
-                </p>
-                <a href="#" class="btn">Get Started</a>
-              </div>
-            </div>
-          </div>
+          <h1 data-aos="fade-up">Custom Software Development</h1>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            style="text-align: center; color: black"
+          >
+            Enhance your business operations with tailored software solutions.
+          </p>
         </div>
       </section>
 
-      <section class="services">
+      <section class="service-features">
         <div class="container">
-          <div class="section-title">
-            <h2>Our Services</h2>
-          </div>
+          <h2 class="section-title" data-aos="fade-up">Our Services</h2>
           <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="feature-item">
                 <i class="bi bi-laptop"></i>
-                <h3>SEO Optimization</h3>
-                <p>Improve your website's visibility on search engines.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up" data-aos-delay="100">
-                <i class="bi bi-chat-left-dots"></i>
-                <h3>Social Media Marketing</h3>
-                <p>Engage with your audience on social media platforms.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-journal-richtext"></i>
-                <h3>Content Marketing</h3>
-                <p>Create valuable content that drives traffic and leads.</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-bar-chart"></i>
-                <h3>PPC Advertising</h3>
+                <h3>Web Application Development</h3>
                 <p>
-                  Run effective pay-per-click campaigns to boost conversions.
+                  Create scalable and responsive web applications tailored to
+                  your business needs.
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope-open"></i>
-                <h3>Email Marketing</h3>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="feature-item">
+                <i class="bi bi-gear"></i>
+                <h3>Custom Software Solutions</h3>
                 <p>
-                  Reach out to your customers with targeted email campaigns.
+                  Design and develop custom software solutions to streamline
+                  your business processes.
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="service-item" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-chat-dots"></i>
-                <h3>Consulting & Strategy</h3>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="feature-item">
+                <i class="bi bi-cloud-upload"></i>
+                <h3>Cloud Integration</h3>
                 <p>
-                  Get expert advice and strategic guidance for your digital
-                  marketing efforts.
+                  Integrate cloud technologies to optimize storage,
+                  accessibility, and security of your data.
                 </p>
               </div>
             </div>
@@ -370,7 +384,26 @@
         </div>
       </section>
 
-      <section id="testimonials" class="testimonials section-bg"></section>
+      <section id="contact" class="contact-us">
+        <div class="container">
+          <h2 data-aos="fade-up">Ready to Get Started?</h2>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Contact us today to discuss your project requirements and get a free
+            consultation.
+          </p>
+          <a
+            href="contact.html"
+            class="btn btn-primary"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials section-bg">
+        
+      </section>
     </main>
 
     <footer id="footer" class="footer position-relative">
@@ -410,7 +443,7 @@
       <div class="container footer-top">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="d-flex align-items-center">
+            <a href="index.html" class="d-flex align-items-center">
               <span class="sitename">Gfort</span>
             </a>
             <div class="footer-contact pt-3">
@@ -429,19 +462,19 @@
             <ul>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="/">Home</a>
+                <a href="index.html">Home</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="about">About us</a>
+                <a href="about.html">About us</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="services">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li>
                 <i class="bi bi-chevron-right"></i>
-                <a href="contact">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -492,7 +525,7 @@
           © <span>Copyright</span> <strong class="px-1 sitename">Gfort</strong>
           <span>All Rights Reserved</span>
         </p>
-        <div class="credits">Designed by <a href="/">Gfort</a></div>
+        <div class="credits">Designed by <a href="index.html">Gfort</a></div>
       </div>
     </footer>
 
@@ -527,15 +560,15 @@
     </script>
     <!-- Testimonials Module -->
     <script src="assets/js/testimonials.js"></script>
-
+    
     <!-- SEO Optimizer -->
     <script src="assets/js/seo-optimizer.js"></script>
-
+    
     <script>
       // Initialize testimonials once DOM is loaded
-      document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener('DOMContentLoaded', function() {
         // Render testimonials in grid layout
-        TestimonialsModule.renderTestimonialsGrid("testimonials");
+        TestimonialsModule.renderTestimonialsGrid('testimonials');
       });
     </script>
   </body>
