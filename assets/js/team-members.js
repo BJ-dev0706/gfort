@@ -85,9 +85,9 @@ const teamMembers = [
   },
   {
     id: 7,
-    name: "Jhon Alejandro",
+    name: "Ostap S",
     position: "Blockchain Developer",
-    image: "assets/img/team/jhon.jpg",
+    image: "assets/img/team/ostap.png",
     bio: "Developing distributed ledger applications and implementing cryptographic protocols to enhance data integrity and security.",
     social: {
       twitter: "https://twitter.com",
