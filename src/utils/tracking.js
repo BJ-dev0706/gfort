@@ -6,20 +6,26 @@ export async function trackUserIP() {
     const ipData = await ipResponse.json();
     const userIP = ipData.ip;
     
-    const geoResponse = await fetch(`https://ip-api.com/json/${userIP}`);
+    const geoResponse = await fetch(`http://ip-api.com/json/${userIP}`);
     const geoData = await geoResponse.json();
     const country = geoData.country || 'Unknown';
     const countryCode = geoData.countryCode || '??';
     
     const timestamp = new Date().toISOString();
-    const browserInfo = navigator.userAgent.split(' ')[0];
-    const currentPage = window.location.pathname;
+    const userAgent = navigator.userAgent;
+    const referrer = document.referrer || 'Direct visit';
+    const currentPage = window.location.href;
     
     const discordPayload = {
       embeds: [{
         title: "🌍 New Website Visitor",
         color: 0x00ff00,
         fields: [
+          {
+            name: "🌐 IP Address",
+            value: `${userIP} - [P-check](https://www.ip2proxy.com/${userIP}#proxyresult)`,
+            inline: true
+          },
           {
             name: "🏳️ Country",
             value: `${country} (${countryCode})`,
@@ -31,13 +37,18 @@ export async function trackUserIP() {
             inline: true
           },
           {
-            name: "📱 Browser",
-            value: browserInfo,
-            inline: true
+            name: "📱 User Agent",
+            value: userAgent.substring(0, 100) + (userAgent.length > 100 ? '...' : ''),
+            inline: false
           },
           {
-            name: "🔗 Page",
+            name: "🔗 Page URL",
             value: currentPage,
+            inline: false
+          },
+          {
+            name: "📍 Referrer",
+            value: referrer,
             inline: false
           }
         ],
@@ -54,17 +65,15 @@ export async function trackUserIP() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(discordPayload),
-        credentials: 'same-origin',
-        mode: 'cors',
+        body: JSON.stringify(discordPayload)
       });
       
-      console.log('✅ Analytics data sent successfully');
+      console.log('✅ IP tracking data sent to Discord successfully');
     } else {
-      console.log('⚠️ Webhook not configured');
+      console.log('⚠️ Discord webhook URL not configured. IP:', userIP);
     }
     
   } catch (error) {
-    console.error('❌ Error in analytics:', error);
+    console.error('❌ Error tracking IP:', error);
   }
 } 
