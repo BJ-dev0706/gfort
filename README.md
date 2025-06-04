@@ -1,62 +1,36 @@
-# Gfort Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is the repository for the Gfort Tech Agency website.
+## Getting Started
 
-## Performance Optimizations
+First, run the development server:
 
-### Image Lazy Loading
-
-The website implements lazy loading for images to improve page load times:
-
-- Images are only loaded when they enter the viewport
-- Placeholder images are shown until the actual image is loaded
-- A smooth fade-in effect is applied when images are loaded
-
-### Image Optimization
-
-You can optimize the images in the website using the following steps:
-
-1. Install dependencies:
-   ```
-   npm install
-   ```
-
-2. Run the image optimization script:
-   ```
-   npm run optimize-images
-   ```
-
-This will create optimized versions of all images in the `public/assets/img-optimized` directory. You can then replace the original images with the optimized versions.
-
-## Development
-
-To start the development server:
-
-```
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-The server will start on http://localhost:3000.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Production
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-To start the production server:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-```
-npm start
-```
+## Learn More
 
-## Caching
+To learn more about Next.js, take a look at the following resources:
 
-The server implements caching for static assets:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Images: 7-day cache (604800 seconds)
-- CSS, JS, JSON, ICO: 1-day cache (86400 seconds)
-- HTML: No cache
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Additional Performance Tips
+## Deploy on Vercel
 
-1. Use WebP images where possible for smaller file sizes
-2. Compress and resize images before uploading them
-3. Consider using responsive images with different sizes for different screen sizes
-4. Use a CDN for serving static assets in production
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

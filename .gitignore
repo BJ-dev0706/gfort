@@ -1,45 +1,41 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Dependencies
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-package-lock.json
-yarn.lock
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
-# Build files
-dist/
-build/
-assets/img-optimized/
+# testing
+/coverage
 
-# IDE/Editor specific files
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-Thumbs.db
+*.pem
 
-# Environment variables
-.env
-.env.local
-.env.development
-.env.test
-.env.production
-
-# Logs
-logs/
-*.log
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# Temporary files
-tmp/
-temp/
-.cache/
+# env files (can opt-in for committing if needed)
+.env*
 
-# Generated files
-coverage/
-.nyc_output/
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
