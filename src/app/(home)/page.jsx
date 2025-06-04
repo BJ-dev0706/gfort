@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-
+import { trackUserIP } from "@/utils/tracking";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
 import Header from "@/components/sections/Header";
 import HeroSection from "@/components/sections/HeroSection";
@@ -20,6 +20,9 @@ export default function Home() {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1500);
+
+    trackUserIP().catch(console.error);
+
     return () => clearTimeout(timer);
   }, []);
 
