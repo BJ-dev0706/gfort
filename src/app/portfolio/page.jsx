@@ -93,24 +93,24 @@ const PortfolioPage = () => {
                     height={300}
                     className="w-full h-64 object-cover"
                   />
-                  <div className="absolute cursor-pointer inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                     <div className="flex items-center justify-center gap-4">
                       <button
                         onClick={() => {
                           setIsOpen(true);
                           setPhotoIndex(index);
                         }}
-                        className="text-white text-3xl"
+                        className="text-white text-3xl bg-[#059652] rounded-full p-2 cursor-pointer"
                       >
-                        <BiZoomIn className="text-white text-3xl" />
+                        <BiZoomIn className="text-white text-xl" />
                       </button>
                       <Link
                         href={`/portfolio/${item.id}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white text-3xl"
+                        className="text-white text-3xl bg-[#059652] rounded-full p-2 cursor-pointer"
                       >
-                        <BiLinkExternal className="text-white text-3xl" />
+                        <BiLinkExternal className="text-white text-xl" />
                       </Link>
                     </div>
                   </div>
