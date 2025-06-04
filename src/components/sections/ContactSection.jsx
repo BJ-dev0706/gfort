@@ -60,13 +60,29 @@ const ContactForm = () => {
     setIsLoading(true);
     setMessage({ type: '', text: '' });
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
       setMessage({ type: 'success', text: 'Your message has been sent. Thank you!' });
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
-      setMessage({ type: 'error', text: 'There was an error sending your message. Please try again.' });
+      setMessage({ 
+        type: 'error', 
+        text: 'There was an error sending your message. Please try again.' 
+      });
+      console.error('Contact form error:', error);
     } finally {
       setIsLoading(false);
     }
