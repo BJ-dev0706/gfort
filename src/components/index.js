@@ -10,3 +10,5 @@ export { default as ServicesSection } from './sections/ServicesSection';
 export { default as ClientsSection } from './sections/ClientsSection';
 export { default as TestimonialsSection } from './sections/TestimonialsSection';
 export { default as Footer } from './sections/Footer'; 
+
+export { default as Chat } from './chat';
