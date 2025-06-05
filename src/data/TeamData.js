@@ -92,9 +92,9 @@ export const teamMembers = [
   },
   {
     id: 8,
-    name: "Arian Koshelenko",
+    name: "Yeferson Galindo",
     position: "3D web developer & VR developer",
-    image: "/img/team/arian.jpg",
+    image: "/img/team/yeferson.png",
     bio: "Building immersive digital experiences through WebGL, Three.js, and VR technologies that push the boundaries of spatial computing.",
     social: {
       twitter: "https://twitter.com",

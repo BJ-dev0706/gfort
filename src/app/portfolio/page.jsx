@@ -85,15 +85,15 @@ const PortfolioPage = () => {
             />
           </div>
 
-          <div className="flex justify-center mb-8">
-            <ul className="flex space-x-4">
+          <div className="flex justify-center mb-8 px-4">
+            <ul className="flex flex-wrap justify-center gap-3">
               {categories.map((category) => (
                 <li key={category.id}>
                   <button
-                    className={`px-4 py-2 rounded-full cursor-pointer ${
+                    className={`px-4 py-2 rounded-full cursor-pointer text-sm md:text-base whitespace-nowrap transition-colors duration-200 ${
                       activeFilter === category.id
                         ? "bg-[#059652] text-white"
-                        : "bg-gray-200 text-gray-700"
+                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
                     onClick={() => setActiveFilter(category.id)}
                   >
